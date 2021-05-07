@@ -14,7 +14,7 @@ exports.collectContentPre = (hookName, context, cb) => {
     const tname = context.tname;
     const state = context.state;
     const lineAttributes = state.lineAttributes;
-    const tagIndex = tags.indexOf(tname);
+    const tagIndex = spacings.indexOf(tname);
 
     if(tagIndex >= 0) {
         lineAttributes.align = spacings[tagIndex];
